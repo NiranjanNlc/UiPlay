@@ -20,9 +20,7 @@ import kotlinx.coroutines.SupervisorJob
 
 class MainFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = MainFragment()
-    }
+
 
     private lateinit var binding: SongsFragmentBinding
     private lateinit var viewModel: MainViewModel
@@ -47,10 +45,6 @@ class MainFragment : Fragment() {
 
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-    }
     private fun initRecyclerView()
     {
         print(" recycler view initiated")
@@ -59,7 +53,7 @@ class MainFragment : Fragment() {
         binding.recyclerview.adapter=  adapter
         adapter.submitList(viewModel.songs.value)
     }
-    fun bindData()
+    private fun bindData()
     {
         binding.lifecycleOwner=requireActivity()
         initialiseSampleViewModal()
