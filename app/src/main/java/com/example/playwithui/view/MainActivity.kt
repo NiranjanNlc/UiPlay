@@ -1,11 +1,11 @@
-package com.example.playwithui
+package com.example.playwithui.view
 
 
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import com.example.playwithui.R
 import com.example.playwithui.databinding.MainActivityBinding
 import com.example.playwithui.modal.database.SongsDataBase
 import com.example.playwithui.modal.repository.SongRepository
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= DataBindingUtil.setContentView(this,R.layout.main_activity)
+        binding= DataBindingUtil.setContentView(this, R.layout.main_activity)
         bindData()
         }
     fun bindData()
