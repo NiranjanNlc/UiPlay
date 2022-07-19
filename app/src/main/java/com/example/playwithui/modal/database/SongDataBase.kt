@@ -10,7 +10,7 @@ import com.example.playwithui.modal.data.Song
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@Database(entities = [Song::class], version = 2)
+@Database(entities = [Song::class], version = 4, exportSchema = false)
 abstract class SongDataBase : RoomDatabase() {
     abstract fun songDao(): SongDao
     private class SongDatabaseCallback(
