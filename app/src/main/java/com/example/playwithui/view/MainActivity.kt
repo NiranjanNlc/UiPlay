@@ -14,9 +14,12 @@ import com.example.playwithui.view.adapter.SongAdapter
 import com.example.playwithui.view.main.AddFragment
 import com.example.playwithui.viewmodal.MainViewModel
 import com.example.playwithui.viewmodal.ViewModalFactory
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
+
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity()
 {
     private val adapter= SongAdapter()
