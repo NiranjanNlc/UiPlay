@@ -2,9 +2,10 @@ package com.example.playwithui.viewmodal
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.playwithui.modal.repository.SongRepository
+import com.example.playwithui.modal.repository.SongRepo
+import javax.inject.Inject
 
-class ViewModalFactory(private val repository: SongRepository) : ViewModelProvider.Factory {
+class ViewModalFactory @Inject constructor(private val repository: SongRepo) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         println(" Inn view odal factory")
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {

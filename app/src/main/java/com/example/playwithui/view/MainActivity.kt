@@ -7,8 +7,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import com.example.playwithui.R
 import com.example.playwithui.databinding.MainActivityBinding
-import com.example.playwithui.modal.database.SongsDataBase
-import com.example.playwithui.modal.repository.SongRepository
+import com.example.playwithui.modal.database.SongDataBase
+import com.example.playwithui.modal.repository.SongRepo
 import com.example.playwithui.ui.main.MainFragment
 import com.example.playwithui.view.adapter.SongAdapter
 import com.example.playwithui.view.main.AddFragment
@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity()
 
     private fun initialiseSampleViewModal() {
         val applicationScope = CoroutineScope(SupervisorJob())
-        val database = SongsDataBase.getDatabase(this, applicationScope)
-        val repository = SongRepository(database.songDao())
+        val database = SongDataBase.getDatabase(this, applicationScope)
+        val repository = SongRepo(database.songDao())
         viewModel= ViewModalFactory( repository).create(MainViewModel::class.java)
     }
     private fun observeChange()
