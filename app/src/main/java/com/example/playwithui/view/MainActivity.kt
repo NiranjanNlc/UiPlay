@@ -2,6 +2,7 @@ package com.example.playwithui.view
 
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -18,8 +19,7 @@ class MainActivity : AppCompatActivity()
 {
     private val adapter= SongAdapter()
     private lateinit var binding: MainActivityBinding
-    private lateinit var viewModel: MainViewModel
-
+    private val viewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this, R.layout.main_activity)

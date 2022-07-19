@@ -7,9 +7,11 @@ import androidx.lifecycle.ViewModel
 import com.example.playwithui.modal.data.Song
 import com.example.playwithui.modal.repository.SongRepo
 import com.example.playwithui.util.Coroutines
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import javax.inject.Inject
 
+@HiltViewModel
 class MainViewModel @Inject constructor(val repository: SongRepo) : ViewModel()
 {
     private lateinit var job: Job
