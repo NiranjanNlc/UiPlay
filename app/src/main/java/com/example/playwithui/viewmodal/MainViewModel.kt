@@ -5,11 +5,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.playwithui.modal.data.Song
-import com.example.playwithui.modal.repository.SongRepository
+import com.example.playwithui.modal.repository.SongRepo
 import com.example.playwithui.util.Coroutines
 import kotlinx.coroutines.Job
+import javax.inject.Inject
 
-class MainViewModel(val repository: SongRepository) : ViewModel()
+class MainViewModel @Inject constructor(val repository: SongRepo) : ViewModel()
 {
     private lateinit var job: Job
     val song= MutableLiveData<Song>()

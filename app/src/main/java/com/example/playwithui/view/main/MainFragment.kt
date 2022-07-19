@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.playwithui.viewmodal.MainViewModel
 import com.example.playwithui.R
 import com.example.playwithui.databinding.SongsFragmentBinding
-import com.example.playwithui.modal.database.SongsDataBase
-import com.example.playwithui.modal.repository.SongRepository
+import com.example.playwithui.modal.database.SongDataBase
+import com.example.playwithui.modal.repository.SongRepo
 import com.example.playwithui.view.adapter.SongAdapter
 import com.example.playwithui.viewmodal.ViewModalFactory
 import kotlinx.coroutines.CoroutineScope
@@ -62,8 +62,8 @@ class MainFragment : Fragment() {
 
     private fun initialiseSampleViewModal() {
         val applicationScope = CoroutineScope(SupervisorJob())
-        val database = SongsDataBase.getDatabase(requireActivity(), applicationScope)
-        val repository = SongRepository(database.songDao())
+        val database = SongDataBase.getDatabase(requireActivity(), applicationScope)
+        val repository = SongRepo(database.songDao())
         viewModel= ViewModalFactory( repository).create(MainViewModel::class.java)
     }
     private fun observeChange()

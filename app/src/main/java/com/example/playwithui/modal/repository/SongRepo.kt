@@ -4,8 +4,9 @@ import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import com.example.playwithui.modal.dao.SongDao
 import com.example.playwithui.modal.data.Song
+import javax.inject.Inject
 
-class SongRepository(private val songDao: SongDao) {
+class SongRepo @Inject constructor(private val songDao: SongDao) {
 
     val allSongs: LiveData<List<Song>> = songDao.getAlphabetizedWords()
     @Suppress("RedundantSuspendModifier")

@@ -1,7 +1,6 @@
 package com.example.playwithui.view.main
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,9 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.playwithui.R
 import com.example.playwithui.databinding.SongsFragmentBinding
-import com.example.playwithui.modal.database.SongsDataBase
-import com.example.playwithui.modal.repository.SongRepository
-import com.example.playwithui.ui.main.MainFragment
+import com.example.playwithui.modal.database.SongDataBase
+import com.example.playwithui.modal.repository.SongRepo
 import com.example.playwithui.view.adapter.SongAdapter
 import com.example.playwithui.viewmodal.MainViewModel
 import com.example.playwithui.viewmodal.ViewModalFactory
@@ -70,8 +68,8 @@ class AddFragment : DialogFragment() {
 
     private fun initialiseSampleViewModal() {
         val applicationScope = CoroutineScope(SupervisorJob())
-        val database = SongsDataBase.getDatabase(requireActivity(), applicationScope)
-        val repository = SongRepository(database.songDao())
+        val database = SongDataBase.getDatabase(requireActivity(), applicationScope)
+        val repository = SongRepo(database.songDao())
         viewModel= ViewModalFactory( repository).create(MainViewModel::class.java)
     }
     private fun observeChange()

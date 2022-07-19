@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 @Database(entities = [Song::class], version = 2)
-abstract class SongsDataBase : RoomDatabase() {
+abstract class SongDataBase : RoomDatabase() {
     abstract fun songDao(): SongDao
     private class SongDatabaseCallback(
         private val scope: CoroutineScope
@@ -37,16 +37,16 @@ abstract class SongsDataBase : RoomDatabase() {
         // Singleton prevents multiple instances of database opening at the
         // same time.
         @Volatile
-        private var INSTANCE: SongsDataBase? = null
+        private var INSTANCE: SongDataBase? = null
 
-        fun getDatabase(context: Context, scope: CoroutineScope): SongsDataBase {
+        fun getDatabase(context: Context, scope: CoroutineScope): SongDataBase {
             // if the INSTANCE is not null, then return it,
             // if it is, then create the database]
             println("You have acces over here ")
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    SongsDataBase::class.java,
+                    SongDataBase::class.java,
                     "song_database"
                 ).addCallback(SongDatabaseCallback(scope))
                     .build()
