@@ -10,9 +10,7 @@ import com.example.playwithui.modal.data.Song
 
 class SongAdapter : ListAdapter<Song, SongAdapter.SongViewHolder>(SONG_COMPARATOR)
 {
-
     class SongViewHolder (var binding: ItemSongBinding) : RecyclerView.ViewHolder(binding.root)
-
     companion object {
         val SONG_COMPARATOR = object : DiffUtil.ItemCallback<Song>() {
             override fun areItemsTheSame(oldItem: Song, newItem: Song): Boolean {
@@ -33,12 +31,10 @@ class SongAdapter : ListAdapter<Song, SongAdapter.SongViewHolder>(SONG_COMPARATO
         val binding = ItemSongBinding.inflate(inflater)
         return SongViewHolder(binding)
     }
-
     override fun onBindViewHolder(holder: SongViewHolder, position: Int)
     {
         println("On view bind"+getItem(position))
         holder.binding.song= getItem(position)
         holder.binding.executePendingBindings()
     }
-
 }
