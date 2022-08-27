@@ -23,27 +23,13 @@ class DatabaseModule {
 
             @Provides
             @Singleton
-            fun getDatabase( @ApplicationContext context: Context,songDao: SongDao)= Room.databaseBuilder(
+            fun getDatabase( @ApplicationContext context: Context)
+            = Room.databaseBuilder(
                     context.applicationContext,
                     SongDataBase::class.java,
                     "song_database"
-                )
-//                .addCallback(
-//               object : RoomDatabase.Callback() {
-//                    override fun onCreate(db: SupportSQLiteDatabase) {
-//                        super.onCreate(db)
-//                                // Delete all content here.
-//                                //  songDao.deleteAll()
-//                                // Add sample songs.
-//                                var song = Song(title ="kutu ma kutu" , singer = " Deepak raj Giri")
-//                                songDao.save(song)
-//                                println( song.toString())
-//                            }
-//                        }
-//            )
-                .build()
-
+                ).build()
             @Provides
             @Singleton
-            fun getDao(dataBase: SongDataBase)= dataBase.songDao() 
+            fun getDao(dataBase: SongDataBase)= dataBase.songDao()
             }

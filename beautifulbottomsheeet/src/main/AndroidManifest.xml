@@ -6,6 +6,10 @@
         <activity
             android:name=".BottomSheetActivity"
             android:exported="false" />
+        <intent-filter>
+            <action android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
     </application>
 
 </manifest>
