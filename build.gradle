@@ -1,10 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.6.0'
+    ext.kotlin_version = '1.7.0'
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
@@ -37,9 +38,11 @@ ext {
     coroutines = '1.3.9'
     lifecycleVersion = '2.2.0'
     materialVersion = '1.2.1'
-    roomVersion = '2.2.5'
+    roomVersion = '2.3.0-alpha01'
     // testing
     junitVersion = '4.13.1'
     espressoVersion = '3.1.0'
     androidxJunitVersion = '1.1.2'
+    //dragger version
+    dragger_version ='2.42'
 }
