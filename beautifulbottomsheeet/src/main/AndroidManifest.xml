@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lniranjan.beautifulbottomsheeet">
 
-    <application>
+    <application
+        >
         <activity
             android:name=".BottomSheetActivity"
-            android:exported="false" />
+            android:exported="true" />
         <intent-filter>
             <action android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity" />
             <category android:name="android.intent.category.DEFAULT" />
