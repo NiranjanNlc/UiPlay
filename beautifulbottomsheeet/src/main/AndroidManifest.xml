@@ -2,4 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lniranjan.beautifulbottomsheeet">
 
+    <application>
+        <activity
+            android:name=".BottomSheetActivity"
+            android:exported="false" />
+    </application>
+
 </manifest>
