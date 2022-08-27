@@ -11,11 +11,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Foodie" />
+            <option value="$PROJECT_DIR$/SingleFoodItem" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/beautifulalertdialog" />
             <option value="$PROJECT_DIR$/beautifulbottomsheeet" />
             <option value="$PROJECT_DIR$/beautifulprogressbar" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
+            <option value="$PROJECT_DIR$/chat" />
             <option value="$PROJECT_DIR$/crudrecyclerview" />
             <option value="$PROJECT_DIR$/freelancetabview" />
             <option value="$PROJECT_DIR$/newsfeed" />
