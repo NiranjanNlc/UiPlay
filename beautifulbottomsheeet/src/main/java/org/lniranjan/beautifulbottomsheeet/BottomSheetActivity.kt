@@ -39,7 +39,9 @@ class BottomSheetActivity : AppCompatActivity() {
     }
 
     private fun init_persistent_bottomsheet() {
-        TODO("Not yet implemented")
+
+//        TODO("Not yet implemented")
+
     }
     fun canceldialog(view: View)
     {
