@@ -25,7 +25,7 @@ class BottomSheetActivity : AppCompatActivity() {
         init_persistent_bottomsheet()
         // Modal BottomSheet
         init_modal_bottomsheet()
-        binding.button.setOnClickListener {
+        binding.showButtonSheet.setOnClickListener {
             dialog.show()
         }
     }
@@ -39,9 +39,7 @@ class BottomSheetActivity : AppCompatActivity() {
     }
 
     private fun init_persistent_bottomsheet() {
-
-//        TODO("Not yet implemented")
-
+ 
     }
     fun canceldialog(view: View)
     {
