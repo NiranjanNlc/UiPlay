@@ -25,9 +25,10 @@ class BottomSheetActivity : AppCompatActivity() {
         init_persistent_bottomsheet()
         // Modal BottomSheet
         init_modal_bottomsheet()
-        binding.button.setOnClickListener {
+        binding.showButtonSheet.setOnClickListener {
             dialog.show()
         }
+
     }
 
     private fun init_modal_bottomsheet() {
