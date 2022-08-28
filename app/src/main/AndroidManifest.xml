@@ -14,7 +14,7 @@
         <activity android:name=".view.MainActivity"
             android:exported="false"></activity>
         <activity
-            android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity"
+            android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity"\
             android:exported="true">
             <intent-filter>
             <action android:name="android.intent.action.MAIN" />

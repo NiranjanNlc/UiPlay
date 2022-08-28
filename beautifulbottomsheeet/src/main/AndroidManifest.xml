@@ -4,10 +4,12 @@
 
     <application
         android:theme="@style/Theme.AppCompat"
+
         >
         <activity
             android:name=".BottomSheetActivity"
             android:exported="true" />
+
     </application>
 
 </manifest>
