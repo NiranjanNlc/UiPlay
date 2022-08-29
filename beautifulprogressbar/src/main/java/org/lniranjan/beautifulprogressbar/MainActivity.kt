@@ -1,4 +1,4 @@
-package org.lniranjan.beautifulalertdialog
+package org.lniranjan.beautifulprogressbar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

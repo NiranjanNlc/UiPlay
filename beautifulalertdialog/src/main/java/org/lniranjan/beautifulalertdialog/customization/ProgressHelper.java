@@ -1,8 +1,7 @@
-package org.lniranjan.beautifulalertdialog;
+package org.lniranjan.beautifulalertdialog.customization;
 
 import android.content.Context;
-
-import com.pnikosis.materialishprogress.ProgressWheel;
+import org.lniranjan.beautifulalertdialog.R;
 
 public class ProgressHelper {
     private ProgressWheel mProgressWheel;

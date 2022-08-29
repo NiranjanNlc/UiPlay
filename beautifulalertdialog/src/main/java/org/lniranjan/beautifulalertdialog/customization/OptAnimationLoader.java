@@ -1,4 +1,4 @@
-package org.lniranjan.beautifulalertdialog;
+package org.lniranjan.beautifulalertdialog.customization;
 
 import android.content.Context;
 import android.content.res.Resources;
