@@ -1,0 +1,8 @@
+<resources>
+    <string name="basic">Basic</string>
+    <string name="error">Error</string>
+    <string name="warn">Warning</string>
+    <string name="success">Success</string>
+    <string name="fail">Failed</string>
+    <string name="custom">Custom</string>
+</resources>

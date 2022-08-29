@@ -9,12 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
 
         <activity android:name=".view.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false">
+
+        </activity>
         <activity
-            android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity"\
+            android:name="org.lniranjan.beautifulbottomsheeet.BottomSheetActivity"
             android:exported="true">
             <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -22,6 +24,26 @@
             </intent-filter>
         </activity>
 
-    </application>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </application>
 </manifest>
