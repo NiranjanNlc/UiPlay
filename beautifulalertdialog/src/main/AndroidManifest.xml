@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lniranjan.beautifulalertdialog">
 
-    <application>
+    <application
+        android:theme="@style/Theme.AppCompat"
+        >
         <activity
             android:name=".BeautifulAlertDialogactivity"
             android:exported="true" />
