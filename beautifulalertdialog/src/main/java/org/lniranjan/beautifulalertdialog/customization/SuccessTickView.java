@@ -1,4 +1,4 @@
-package org.lniranjan.beautifulalertdialog;
+package org.lniranjan.beautifulalertdialog.customization;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,6 +8,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
+
+import org.lniranjan.beautifulalertdialog.R;
 
 public class SuccessTickView extends View {
     private float mDensity = -1;

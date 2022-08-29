@@ -1,4 +1,4 @@
-package org.lniranjan.beautifulalertdialog;
+package org.lniranjan.beautifulalertdialog.customization;
 
 
 import android.app.Dialog;
@@ -16,7 +16,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
- 
+
+import org.lniranjan.beautifulalertdialog.R;
+
 import java.util.List;
 
 public class CustomAlertDialog extends Dialog implements View.OnClickListener {

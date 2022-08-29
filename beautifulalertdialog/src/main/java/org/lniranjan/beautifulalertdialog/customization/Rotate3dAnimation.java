@@ -1,4 +1,4 @@
-package org.lniranjan.beautifulalertdialog;
+package org.lniranjan.beautifulalertdialog.customization;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,6 +8,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
+
+import org.lniranjan.beautifulalertdialog.R;
 
 public class Rotate3dAnimation extends Animation {
     private int mPivotXType = ABSOLUTE;
