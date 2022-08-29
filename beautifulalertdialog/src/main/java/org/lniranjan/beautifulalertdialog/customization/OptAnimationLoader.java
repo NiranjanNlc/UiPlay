@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.Xml;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -21,7 +22,7 @@ public class OptAnimationLoader {
 
     public static Animation loadAnimation(Context context, int id)
             throws Resources.NotFoundException {
-
+        Log.d(" id givrm ", String.valueOf(id));
         XmlResourceParser parser = null;
         try {
             parser = context.getResources().getAnimation(id);

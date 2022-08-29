@@ -77,7 +77,7 @@ public class CustomAlertDialog extends Dialog implements View.OnClickListener {
         setCanceledOnTouchOutside(false);
         mProgressHelper = new ProgressHelper(context);
         mAlertType = alertType;
-        mErrorInAnim = OptAnimationLoader.loadAnimation(getContext(), R.anim.error_frame_in);
+        mErrorInAnim = OptAnimationLoader.loadAnimation(getContext(), R.anim.error_x_in);
         mErrorXInAnim = (AnimationSet) OptAnimationLoader.loadAnimation(getContext(), R.anim.error_x_in);
         // 2.3.x system don't support alpha-animation on layer-list drawable
         // remove it from animation set
