@@ -16,7 +16,10 @@
         <entry key="beautifulbottomsheeet/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1" />
         <entry key="beautifulbottomsheeet/src/main/res/layout/activity_bottom_sheet.xml" value="0.1" />
         <entry key="beautifulbottomsheeet/src/main/res/layout/modal_bottom_sheet.xml" value="0.11728395061728394" />
+        <entry key="beautifulprogressbar/src/main/res/drawable/chrome_logo.xml" value="0.1055" />
+        <entry key="beautifulprogressbar/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.1055" />
         <entry key="beautifulprogressbar/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
+        <entry key="beautifulprogressbar/src/main/res/layout/progress_bar.xml" value="0.1" />
       </map>
     </option>
   </component>
