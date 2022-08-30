@@ -4,8 +4,8 @@
 
     <application>
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".ProgressBarActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

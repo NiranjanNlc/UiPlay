@@ -83,6 +83,6 @@ dependencies {
     //Resolve jdk8+ Generation Annotations - javax annotation does not exist
 //    compileOnly 'com.github.pengrad:jdk9-deps:1.0'
     implementation project(":beautifulalertdialog")
-
+    implementation  project(":beautifulprogressbar")
 
 }
